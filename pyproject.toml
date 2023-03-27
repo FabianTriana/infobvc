@@ -3,3 +3,33 @@
 [build-system]
 requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "infobvc"
+version = "0.0.1"
+description = "Get data about Bolsa de Valores de Colombia (BVC)"
+readme = "README.md"
+authors = [{ name = "Fabian Triana", email = "fatrianaa1@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["bvc", "stocks", "finance"]
+dependencies = [
+    "pandas >= 1.5.0",
+    "numpy >= 1.22.1",
+    "requests >= 2.22.0",
+    'tomli; python_version < "3.11"',
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/FabianTriana/infobvc"
+
+[project.scripts]
+realpython = "reader.__main__:main"
