@@ -30,6 +30,3 @@ dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
 
 [project.urls]
 Homepage = "https://github.com/FabianTriana/infobvc"
-
-[project.scripts]
-realpython = "reader.__main__:main"
