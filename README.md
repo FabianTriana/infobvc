@@ -1,3 +1,3 @@
-# Example Package
+# Infobvc
 
-This is a simple example package.
+This is a Package to get and analyze data about Bolsa de Valores de Colombia (BVC)
