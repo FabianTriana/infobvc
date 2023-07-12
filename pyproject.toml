@@ -16,12 +16,13 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
-keywords = ["bvc", "stocks", "finance"]
+keywords = ["bvc", "stocks", "finance", "colombia"]
 dependencies = [
     "pandas >= 1.5.0",
     "numpy >= 1.22.1",
     "requests >= 2.22.0", 
-    "seaborn",
+    "seaborn", 
+    "pandas-ta",
     'tomli; python_version < "3.11"',
 ]
 requires-python = ">=3.9"
