@@ -1,10 +1,8 @@
-Welcome to Lumache's documentation!
+Welcome to infobvc documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**infobvc** This is a Package to get and analyze data about Bolsa de Valores de Colombia (BVC)
+It offers a set of *simple* and *intuitive* functions to get data on prices, fundamental information and technical indicators. 
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -19,4 +17,3 @@ Contents
 .. toctree::
 
    usage
-   api
