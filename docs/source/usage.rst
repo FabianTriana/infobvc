@@ -6,13 +6,13 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use infobvc, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   pip install infobvc
 
-Creating recipes
+Using infobvc
 ----------------
 
 To retrieve a list of random ingredients,
