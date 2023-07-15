@@ -12,7 +12,7 @@ To use infobvc, first install it using pip:
 
    pip install infobvc
 
-Using infobvc
+Get price data
 ----------------
 
 To retrieve a list of random ingredients,
