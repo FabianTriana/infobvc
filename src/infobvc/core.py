@@ -356,6 +356,14 @@ def correlation_matrix(tickers: list = ['*'], min_date: str = minimum_date, max_
         Maximum date. It must have `%Y-%m-%d` format.
   agg_period: str
         Aggregation period. The only valid values are `d` (day), `m` (month), `q` (quarter) and `y` (year).
+  as_plot: bool
+        If True then correlation matrix is returned as a plot. If False then correlation matrix is returned as a DataFrame. Default is False.
+  annot: bool
+        If True then correlation values are displayed on the plot. It is only useful when as_plot is True.
+  x_size: int
+        Width. It is only useful when as_plot is True.
+  y_size: int
+        Height. It is only useful when as_plot is True.
 
   Returns
   ----------
