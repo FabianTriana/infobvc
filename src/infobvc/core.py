@@ -133,7 +133,7 @@ def get_fundamentals(tickers: list = ['*'], ratios: bool = False):
 
   Returns
   ----------
-  df = pandas.DataFrame
+  df : pandas.DataFrame
   '''
   # Capitalize all tickers selected:
   tickers = [the_tickers.upper() for the_tickers in tickers]
