@@ -211,7 +211,7 @@ def get_technicals(tickers: list = ['*']):
 
   Returns
   ----------
-  df = pandas.DataFrame
+  df : pandas.DataFrame
   '''
   # Capitalize all tickers selected:
   df = get_quotes(tickers)
@@ -342,7 +342,7 @@ def plot_comparative_prices(tickers: list = ['*'], min_date: str = minimum_date,
 
 
 # Correlation Matrix Function:
-def correlation_matrix(tickers: list = ['*'], min_date: str = minimum_date, max_date: str = maximum_date, agg_period: str = 'd', as_plot: bool = False):
+def correlation_matrix(tickers: list = ['*'], min_date: str = minimum_date, max_date: str = maximum_date, agg_period: str = 'd', as_plot: bool = False, annot: bool = False, x_size : int = 10, y_size : int = 10):
   # Docstring:
   '''Correlation matrix of close prices for stocks, period and aggregation period selected.
 
@@ -375,7 +375,8 @@ def correlation_matrix(tickers: list = ['*'], min_date: str = minimum_date, max_
 
   # If as_plot is True then return correlation matrix plot:
   if as_plot == True:
-    ax = sns.heatmap(df_corr, vmin = -1, vmax = 1, cmap = 'RdYlGn', center = 0, annot = True)
+    fig, ax = plt.subplots(figsize = (x_size, y_size))
+    sns.heatmap(df_corr, vmin = -1, vmax = 1, cmap = 'RdYlGn', center = 0, annot = annot, ax = ax)
     ax.set(title = 'Correlation Matrix')
     result = ax
 
