@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "infobvc"
-version = "0.0.3"
+version = "0.0.4"
 description = "Get data about Bolsa de Valores de Colombia (BVC)"
 readme = "README.md"
 authors = [{ name = "Fabian Triana", email = "fatrianaa1@gmail.com" }]
@@ -23,6 +23,7 @@ dependencies = [
     "requests >= 2.22.0", 
     "seaborn", 
     "pandas-ta",
+    "matplotlib",
     'tomli; python_version < "3.11"',
 ]
 requires-python = ">=3.9"

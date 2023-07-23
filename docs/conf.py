@@ -16,7 +16,7 @@ sys.path.append(os.path.abspath(
 project = 'infobvc'
 copyright = '2023, Fabian Triana'
 author = 'Fabian Triana'
-release = '0.0.3'
+release = '0.0.4'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

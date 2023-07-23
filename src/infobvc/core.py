@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import requests
 import seaborn as sns
+import matplotlib.pyplot as plt
 import pandas_ta as ta
 from datetime import date, datetime
 from functools import reduce
